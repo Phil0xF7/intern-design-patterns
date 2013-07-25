@@ -6,6 +6,7 @@
 	<li>"a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically"</li>
 	<li>Flexible</li>
 	<li>Limited interdependence between observers and object</li>
+	<li>Cannot depend on notifying Observers in a specific order -- if this were the case, this would no longer be considered loosely coupled</li>
 </ul>
 <br>
 What this program does is model the Observer design pattern as seen by the perspective of a newspaper. Obviously papars are dependent on subscribers, and they want their subscribers to know when there's new material for them to read. If the material isn't up to snuff, the subscribers are probably going to leave. But if it's good, maybe they'll tell their friends about you, and they'll add to your subscription base! Yay!!
